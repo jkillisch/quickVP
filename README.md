@@ -15,11 +15,20 @@ To batch generate multiple confirmations of participation, a data.frame or tibbl
 ```{r}
 # Dataframe of participant information
 dat <- dplyr::tibble(
+  
+  # Store the doc_id's in case someone asks you to confirm the document's authenticity.
   doc_id = c(102, 103, 104),
+  
+  # These can be matriculation numbers
   student_id = c(132, 234, 421),
+  
+  # Mails of the students
   mail = c("student_1@tok.com", "student_2@tok.com", "student_3@tok.com"),
+  
+  # Date of participation
   date = c("23.10.2024", "01.04.2024", "03.09.2024")
 )
+
 ```
 
 Additionally, global information about the study must be passed to the function quickVP:
