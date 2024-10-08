@@ -7,12 +7,14 @@ The package requires that LaTex can be rendered by knitr + RMarkdown on your loc
 Install the package using devtools:
 
 ```{r}
-devtools::install_github("jkillisch/quickVP")
+# devtools::install_github("jkillisch/quickVP")
+library(quickVP)
 ```
 
 To batch generate multiple confirmations of participation, a data.frame or tibble of student information must be created. Each row corresponds to a student:
 
 ```{r}
+
 # Dataframe of participant information
 dat <- dplyr::tibble(
   
