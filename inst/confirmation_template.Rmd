@@ -32,15 +32,15 @@ The participant was rewarded `r params$vp_hours` VP-hours for the participation.
 
 \vspace{10pt}
 
-`r if(!is.null(params$student_id) & !is.na(params$student_id)){paste0("Student ID: ", params$student_id)}`
+`r if(!is.null(params$student_id)){paste0("Student ID: ", params$student_id)}`
 
 \vspace{-3pt}
 
-`r if(!is.null(params$mail) & !is.null(params$mail)){paste0("Mail: ", params$mail)}`
+`r if(!is.null(params$mail)){paste0("Mail: ", params$mail)}`
 
 \vspace{-3pt}
 
-`r if(!is.null(params$date) & !is.null(params$date)){paste0("Participation date: ", params$date)}`
+`r if(!is.null(params$date)){paste0("Participation date: ", params$date)}`
 
 ```{=latex}
 \vspace{10pt}
