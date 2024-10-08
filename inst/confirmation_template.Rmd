@@ -94,6 +94,4 @@ The participant was rewarded `r params$vp_hours` VP-hours for the participation.
 
 \vspace{10pt}
 
-This confirmation of participation is tied to the document ID `r params$doc_id`.
-
-The document ID is unique to this confirmation of participation. Please contact `r params$study_mail` if you require a confirmation of the document ID.
+This confirmation of participation is tied to the document ID `r params$doc_id`. The document ID is unique. Please contact `r params$study_mail` if you require a confirmation of the document ID.
