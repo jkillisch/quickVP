@@ -68,4 +68,4 @@ quickVP(
 )
 ```
 
-Please don't hesitate to message me if you have any questions.
+Please don't hesitate to message me or create an issue if you have any questions.
