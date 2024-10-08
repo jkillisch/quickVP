@@ -65,32 +65,36 @@ quickVP <- function (
     min.cols = 1
   )
 
-  stopifnot(
-    "The columns doc_id, student_id, mail, and date must be present in dat" =
-    all(c("doc_id", "student_id", "mail", "date") %in% colnames(dat))
-    )
+  # stopifnot(
+  #   "The columns doc_id, student_id, mail, and date must be present in dat" =
+  #   all(c("doc_id", "student_id", "mail", "date") %in% colnames(dat))
+  #   )
 
   checkmate::assert_numeric(
     dat$doc_id,
     finite = TRUE,
-    any.missing = TRUE
+    any.missing = TRUE,
+    null.ok = TRUE
   )
 
   checkmate::assert_numeric(
     dat$student_id,
     finite = TRUE,
-    any.missing = TRUE
+    any.missing = TRUE,
+    null.ok = TRUE
   )
 
   checkmate::assert_character(
     dat$mail,
     any.missing = TRUE,
-    pattern = "@"
+    pattern = "@",
+    null.ok = TRUE
   )
 
   checkmate::assert_character(
     dat$date,
-    any.missing = TRUE
+    any.missing = TRUE,
+    null.ok = TRUE
   )
 
   checkmate::assert_character(
