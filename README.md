@@ -1,6 +1,6 @@
 # quickVP
 
-Batch generate confirmations of participation to give credit to study participants. The output document is tailored to giving credit at my local university. Feel free to adjust the code for your own purposes. To add to the template, simply modify the file /inst/confirmation_template.Rmd. You can pass data to the RMarkdown template via the params object that is created in the function quickVP.
+Batch generate confirmations of participation to give credit to study participants. The output document is tailored to giving credit at my local university. Feel free to adjust the code to your own purposes. To add to the template, simply modify the file /inst/confirmation_template.Rmd. You can pass data to the RMarkdown template via the params object that is created in the function quickVP.
 
 The package requires that LaTex can be rendered by knitr + RMarkdown on your local machine.
 
