@@ -4,6 +4,12 @@ Automatically batch generate confirmations of participation to give credit to st
 
 The package requires that LaTex can be rendered by knitr + RMarkdown on your local machine.
 
+Install the package via devtools:
+
+```{r}
+devtools::install_github("jkillisch/quickVP")
+```
+
 To batch generate multiple confirmations of participation, a data.frame or tibble of student information must be created. Each row corresponds to a student:
 
 ```{r}
