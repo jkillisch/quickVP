@@ -60,7 +60,7 @@ quickVP <- function (
 
   checkmate::assert_data_frame(
     dat,
-    any.missing = FALSE,
+    any.missing = TRUE,
     min.rows = 1,
     ncols = 4
   )
