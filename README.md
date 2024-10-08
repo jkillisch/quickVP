@@ -4,7 +4,7 @@ Automatically batch generate confirmations of participation to give credit to st
 
 The package requires that LaTex can be rendered by knitr + RMarkdown on your local machine.
 
-Install the package via devtools:
+Install the package using devtools:
 
 ```{r}
 devtools::install_github("jkillisch/quickVP")
