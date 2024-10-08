@@ -144,7 +144,7 @@ quickVP <- function (
   for (i in 1:nrow(dat)) {
 
     report_path <- file.path(
-      path,
+      normalizePath(path),
       paste0("confirmation_", dat$doc_id[i], ".pdf")
       )
 
