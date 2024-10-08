@@ -24,7 +24,7 @@ This is a confirmation of participation for the study:
 
 \vspace{10pt}
 
-The participant was rewarded `r params$vp_hours` VP-hours for the participation.
+The participant is rewarded `r params$vp_hours` VP-hours.
 
 \vspace{8pt}
 
