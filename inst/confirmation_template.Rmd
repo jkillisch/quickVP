@@ -1,0 +1,99 @@
+---
+title: "Confirmation of Participation"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Study and Reward
+
+\vspace{10pt}
+
+This is a confirmation of participation for the study: 
+
+\vspace{10pt}
+
+\begin{center}
+
+`r params$study_name`
+
+\end{center}
+
+\vspace{10pt}
+
+The participant was rewarded `r params$vp_hours` VP-hours for the participation.
+
+\vspace{8pt}
+
+## Participant Contact
+
+\vspace{10pt}
+
+`r if(!is.null(params$student_id)){paste0("Student ID: ", params$student_id)}`
+
+\vspace{-3pt}
+
+`r if(!is.null(params$mail)){paste0("Mail: ", params$mail)}`
+
+\vspace{-3pt}
+
+`r if(!is.null(params$date)){paste0("Participation date: ", params$date)}`
+
+```{=latex}
+\vspace{10pt}
+```
+
+## Study Contact
+
+\vspace{10pt}
+
+`r if(!is.na(params$study_adress[1])){params$study_adress[1]}`
+
+\vspace{-3pt}
+
+`r if(!is.na(params$study_adress[2])){params$study_adress[2]}`
+
+\vspace{-3pt}
+
+`r if(!is.na(params$study_adress[3])){params$study_adress[3]}`
+
+\vspace{-3pt}
+
+`r if(!is.na(params$study_adress[4])){params$study_adress[4]}`
+
+\vspace{-3pt}
+
+`r if(!is.na(params$study_adress[5])){params$study_adress[5]}`
+
+\vspace{-3pt}
+
+`r if(!is.na(params$study_adress[6])){params$study_adress[6]}`
+
+\vspace{-3pt}
+
+`r if(!is.na(params$study_adress[7])){params$study_adress[7]}`
+
+\vspace{-3pt}
+
+`r if(!is.na(params$study_adress[8])){params$study_adress[8]}`
+
+\vspace{-3pt}
+
+`r if(!is.na(params$study_adress[9])){params$study_adress[9]}`
+
+\vspace{-3pt}
+
+`r if(!is.na(params$study_adress[10])){params$study_adress[10]}`
+
+\vspace{25pt}
+
+## Unique Document ID
+
+\vspace{10pt}
+
+This confirmation of participation is tied to the document ID `r params$doc_id`.
+
+The document ID is unique to this confirmation of participation. Please contact `r params$study_mail` if you require a confirmation of the document ID.
