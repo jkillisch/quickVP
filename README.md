@@ -16,7 +16,7 @@ dat <- dplyr::tibble(
 )
 ```
 
-Additionally, some global information must be set to call the function quickVP:
+Additionally, global information about the study must be passed to the function quickVP:
 
 ```{r}
 # The confirmations will be created here:
