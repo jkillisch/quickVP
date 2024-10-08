@@ -37,3 +37,29 @@ date is a character that gives the data of participation.
 You may set values of these columns to NA. Then, the respective section of
 the confirmation will be skipped.
 }
+\examples{
+# Dataframe of participant information
+dat <- dplyr::tibble(
+  doc_id = c(102, 103, 104),
+  student_id = c(132, 234, 421),
+  mail = c("student_1@tok.com", "student_2@tok.com", "student_3@tok.com"),
+  date = c("23.10.2024", "01.04.2024", "03.09.2024")
+)
+
+# Warning: This will write three PDFs to your working directory
+quickVP(
+  dat = dat,
+  path = getwd(),
+  study_name = "A Very Important Study",
+  study_mail = "investigator@tok.com",
+  study_adress = c(
+    "Investigator Name",
+    "Street 8",
+    "Building B",
+    "Room: 1",
+    "123456 PLZ"
+  ),
+  vp_hours = 1
+)
+
+}

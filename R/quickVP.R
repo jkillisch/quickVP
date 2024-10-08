@@ -22,7 +22,6 @@
 #' You may set values of these columns to NA. Then, the respective section of
 #' the confirmation will be skipped.
 #'
-#' @export
 #' @examples
 #' # Dataframe of participant information
 #' dat <- dplyr::tibble(
@@ -48,6 +47,7 @@
 #'   vp_hours = 1
 #' )
 #'
+#' @export
 
 quickVP <- function (
     dat,
