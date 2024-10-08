@@ -62,7 +62,7 @@ quickVP <- function (
     dat,
     any.missing = TRUE,
     min.rows = 1,
-    ncols = 4
+    min.cols = 1
   )
 
   stopifnot(
