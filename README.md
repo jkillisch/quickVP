@@ -1,6 +1,6 @@
 # quickVP
 
-Automatically batch generate confirmations of participation to give credit to study participants. The package/function is tailored to giving credit at my local university. Feel free to adjust the code for your purposes.
+Automatically batch generate confirmations of participation to give credit to study participants. The package/function is tailored to giving credit at my local university. Feel free to adjust the code for your own purposes.
 
 The package requires that LaTex can be rendered by knitr + RMarkdown on your local machine.
 
